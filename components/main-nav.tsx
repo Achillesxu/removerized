@@ -20,31 +20,31 @@ export function MainNav({ items }: MainNavProps) {
           removerized
         </span>
       </Link>
-      {items?.length ? (
-        <nav className="hidden gap-6 md:flex">
-          {items?.map(
-            (item, index) =>
-              item.href && (
-                <>
-                  <Link
-                    target={item.external ? "_blank" : ""}
-                    key={index}
-                    href={item.href}
-                    className={cn(
-                      "flex items-center text-sm font-medium text-muted-foreground",
-                      item.disabled && "cursor-not-allowed opacity-80"
-                    )}
-                  >
-                    {item.title}
-                    {item.external && (
-                      <ArrowUpRightIcon className="ml-1 size-4"></ArrowUpRightIcon>
-                    )}
-                  </Link>
-                </>
-              )
-          )}
-        </nav>
-      ) : null}
+      {/*{items?.length ? (*/}
+      {/*  <nav className="hidden gap-6 md:flex">*/}
+      {/*    {items?.map(*/}
+      {/*      (item, index) =>*/}
+      {/*        item.href && (*/}
+      {/*          <>*/}
+      {/*            <Link*/}
+      {/*              target={item.external ? "_blank" : ""}*/}
+      {/*              key={index}*/}
+      {/*              href={item.href}*/}
+      {/*              className={cn(*/}
+      {/*                "flex items-center text-sm font-medium text-muted-foreground",*/}
+      {/*                item.disabled && "cursor-not-allowed opacity-80"*/}
+      {/*              )}*/}
+      {/*            >*/}
+      {/*              {item.title}*/}
+      {/*              {item.external && (*/}
+      {/*                <ArrowUpRightIcon className="ml-1 size-4"></ArrowUpRightIcon>*/}
+      {/*              )}*/}
+      {/*            </Link>*/}
+      {/*          </>*/}
+      {/*        )*/}
+      {/*    )}*/}
+      {/*  </nav>*/}
+      {/*) : null}*/}
     </div>
   )
 }

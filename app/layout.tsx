@@ -76,11 +76,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <main className="relative flex h-screen min-h-screen flex-col">
-              <SiteHeader />
+              <SiteHeader />Ï
 
               <div className="flex-1">{children}</div>
               <Toaster></Toaster>
-              <Footer></Footer>
+              {/*<Footer></Footer>*/}
             </main>
             <TailwindIndicator />
           </ThemeProvider>
